@@ -1,172 +1,143 @@
 {
   "personal": {
-    "name": "Thomas Jensen",
-    "title": "Full Stack Developer",
-    "email": "sample@example.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "Your Location",
-    "github": "https://github.com/yourusername",
-    "linkedin": "https://linkedin.com/in/yourusername",
-    "portfolio": "https://yourportfolio.com",
-    "profileImage": "/api/placeholder/300/300"
+    "name": "Thomas Jensen Almazora",
+    "title": "Aspiring Data Scientist and Full Stack Developer",
+    "email": "jensenalmazora@gmail.com",
+    "phone": "0926-066-8541",
+    "location": "Biñan, Laguna",
+    "github": "https://github.com/SensenAlm",
+    "linkedin": "https://linkedin.com/in/thomas-jensen-almazora-3202b02a0/",
+    "portfolio": "https://sensenalm.github.io/",
+    "profileImage": "/ProfilePic.JPG"
   },
   "about": {
     "summary": "Passionate full-stack developer with experience in modern web technologies. I love creating efficient, scalable solutions and learning new technologies to solve complex problems.",
     "skills": [
       {
         "category": "Frontend",
-        "items": ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Vue.js"]
+        "items": ["React", "JavaScript", "HTML5", "CSS3", "Vite", "Tailwind CSS", "Bootstrap"]
       },
       {
         "category": "Backend",
-        "items": ["Node.js", "Python", "Express.js", "Django", "REST APIs", "GraphQL"]
+        "items": ["Node.js", "Python", "Django", "Flask", "C#", "ASP.NET", "PHP", "Java"]
       },
       {
         "category": "Database",
-        "items": ["MongoDB", "PostgreSQL", "MySQL", "Redis"]
+        "items": ["MongoDB", "PostgreSQL", "MySQL", "Sqlite", "MS SQL"]
       },
       {
         "category": "Tools & Others",
-        "items": ["Git", "Docker", "AWS", "Firebase", "Webpack", "Vite"]
+        "items": ["Git", "Postman", "VSCode", "Power BI", "Vite", "Unity", "ESP32"]
       }
     ],
     "experience": [
       {
-        "company": "Tech Solutions Inc.",
-        "position": "Senior Frontend Developer",
-        "duration": "2023 - Present",
-        "description": "Led development of responsive web applications using React and TypeScript. Collaborated with cross-functional teams to deliver high-quality software solutions."
+        "company": "STMicroelectronics Inc.",
+        "position": "Data Analyst Intern at Wirebond",
+        "duration": "Apr 2025 - July 2025",
+        "description": "Developed and deployed an embedded website using Flask to streamline data accessibility and visualization for production insights, enhancing real-time yield monitoring and reporting capabilities for the Wirebond department. Collaborated with Wirebond Process engineers to gather data requirements, ensuring accuracy and relevance of data collected, effectively communicating analytical findings, and actively helping the team by being available every time to support every huddle."
       },
       {
-        "company": "Digital Innovations Ltd.",
-        "position": "Full Stack Developer",
-        "duration": "2021 - 2023",
-        "description": "Developed and maintained full-stack applications using MERN stack. Implemented RESTful APIs and optimized database queries for improved performance."
+        "company": "Mapua Malayan Colleges Laguna",
+        "position": "CCIS-SC Vice President",
+        "duration": "Aug 2023 - Aug 2024",
+        "description": "Vice President of College of Computer and Information Science (CCIS) - Student Council in Mapùa Malayan Colleges Laguna. Assisted in the planning, organization, and coordination of events and activities such as CCIS Month, CCIS Dean’s Lister Awarding, and CCIS Freshman Week, contributing to an engaging and active learning environment. "
+      },
+      {
+        "company": "Mapua Malayan Colleges Laguna",
+        "position": "CCIS-SC CS Representative",
+        "duration": "July 2022 - July 2023",
+        "description": "CS (Computer Science) Representative of College of Computer and Information Science (CCIS) - Student Council in Mapùa Malayan Colleges Laguna. Represented the interests and concerns of the student body as a 2nd year college student and representative to the CCIS Student Council, actively participating in meetings."
       }
     ]
   },
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      "technologies": ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
-      "image": "/api/placeholder/400/250",
-      "githubUrl": "https://github.com/yourusername/ecommerce-platform",
-      "liveUrl": "https://ecommerce-demo.com",
+      "title": "Real-time Water Quality Monitoring System",
+      "description": "Near real-time water quality monitoring system by utilizing ESP32 and analog water quality sensors",
+      "technologies": ["React", "Django", "PostgreSQL", "Python", "ESP32"],
+      "image": "/dashboard.jpg",
+      "githubUrl": "https://github.com/Booorgee/Project_LAWA",
+      "liveUrl": "https://project-lawa.pages.dev/",
       "featured": true
     },
     {
       "id": 2,
-      "title": "Task Management App",
-      "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      "technologies": ["Vue.js", "Firebase", "Vuetify", "PWA"],
-      "image": "/api/placeholder/400/250",
-      "githubUrl": "https://github.com/yourusername/task-manager",
-      "liveUrl": "https://taskmanager-demo.com",
-      "featured": true
+      "title": "Web-Based Research Studies Archive",
+      "description": "A web-based platform for archiving and managing research studies for the students and teachers at Regional High School for Region 1.",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "image": "/rshs.png",
+      "githubUrl": "https://github.com/SensenAlm/CS134-1P-JOURNAL",
+      "liveUrl": "https://rshs-archive.vercel.app/register",
+      "featured": false
     },
     {
       "id": 3,
-      "title": "Weather Dashboard",
-      "description": "A responsive weather dashboard that displays current weather conditions and forecasts using external APIs.",
-      "technologies": ["JavaScript", "HTML5", "CSS3", "Weather API"],
-      "image": "/api/placeholder/400/250",
-      "githubUrl": "https://github.com/yourusername/weather-dashboard",
-      "liveUrl": "https://weather-demo.com",
+      "title": "Flappy Luffy",
+      "description": "Inspired in Flappy Bird, with a twist of having Luffy as the character with special powerups.",
+      "technologies": ["Unity", "C#"],
+      "image": "/flappyluffy.png",
+      "githubUrl": "https://github.com/SensenAlm/Flappy-Luffy",
       "featured": false
     },
     {
       "id": 4,
-      "title": "Blog CMS",
-      "description": "A content management system for blogs with markdown support, SEO optimization, and admin panel.",
-      "technologies": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-      "image": "/api/placeholder/400/250",
-      "githubUrl": "https://github.com/yourusername/blog-cms",
-      "liveUrl": "https://blog-cms-demo.com",
+      "title": "Crazy Naruto",
+      "description": "In this Java game, help Naruto escape the maze by finding the key and reaching the exit.",
+      "technologies": ["Java"],
+      "image": "/naruto.jpg",
+      "githubUrl": "https://github.com/SensenAlm/Crazy-Naruto",
+      "video": "/CrazyNaruto.mp4",
       "featured": false
     }
   ],
   "certifications": [
     {
       "id": 1,
-      "name": "AWS Certified Solutions Architect",
-      "issuer": "Amazon Web Services",
-      "date": "2023",
-      "credentialId": "AWS-SA-2023-001",
-      "image": "/api/placeholder/200/150",
-      "verificationUrl": "https://aws.amazon.com/verification"
+      "name": "Employability Skills - JobReady",
+      "issuer": "Wadhwani Foundation",
+      "date": "2025",
+      "image": "/wadhwani.jpg",
+      "verificationUrl": "https://web.certificate.wfglobal.org/en/certificate?certificateId=68220f801f9c2de6b173d095"
     },
     {
       "id": 2,
-      "name": "Google Cloud Professional Developer",
-      "issuer": "Google Cloud",
-      "date": "2023",
-      "credentialId": "GCP-PD-2023-002",
-      "image": "/api/placeholder/200/150",
-      "verificationUrl": "https://cloud.google.com/verification"
+      "name": "CompTIA IT Fundamentals (ITF+) Certification",
+      "issuer": "CompTIA",
+      "date": "2024",
+      "image": "/comptia.jpg",
+      "verificationUrl": "https://www.credly.com/badges/b9cfea6b-8d3b-4f24-b0a3-f964521c15fb/linked_in_profile"
     },
     {
       "id": 3,
-      "name": "Meta Frontend Developer Certificate",
-      "issuer": "Meta",
-      "date": "2022",
-      "credentialId": "META-FE-2022-003",
-      "image": "/api/placeholder/200/150",
-      "verificationUrl": "https://coursera.org/verification"
-    },
-    {
-      "id": 4,
-      "name": "MongoDB Certified Developer",
-      "issuer": "MongoDB University",
-      "date": "2022",
-      "credentialId": "MONGO-DEV-2022-004",
-      "image": "/api/placeholder/200/150",
-      "verificationUrl": "https://university.mongodb.com/verification"
+      "name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "image": "/aws.jpg",
+      "verificationUrl": "https://www.credly.com/badges/4df3fa9f-fe24-4854-ba01-d5f3ce610593/linked_in_profile"
     }
   ],
   "practicum": [
     {
       "id": 1,
-      "title": "Full Stack Web Development Bootcamp",
-      "institution": "Code Academy Pro",
-      "duration": "6 months (2021)",
-      "description": "Intensive bootcamp covering full-stack development with hands-on projects. Built 5 major projects including e-commerce site, social media app, and RESTful APIs.",
-      "skills": ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "MongoDB"],
-      "projects": [
-        "E-commerce website with payment integration",
-        "Social media platform with real-time chat",
-        "RESTful API for inventory management"
-      ],
-      "certificate": "/api/placeholder/300/200"
+      "title": "Overview of the Company",
+      "description": "STMicroelectronics’ Back-end Manufacturing & Technology plant in Calamba City, the Philippines, began operations in January 1999. The state-of-the-art facility forms part of ST’s strategic network of front- and back-end manufacturing sites that spans Europe and Asia, supplying high-volume silicon solutions to our customers globally. To provide its customers with an independent, secure, and cost-effective manufacturing machine, ST operates a worldwide network of front-end (wafer fabrication) and back-end (assembly, test, and packaging) plants. ST’s principal wafer fabs are located in Agrate Brianza and Catania (Italy), Crolles, Rousset and Tours (France), and in Singapore. The wafer fabs are complemented by world-class assembly-and-test facilities located in China, Malaysia, Malta, Morocco, the Philippines, and Singapore."
     },
     {
       "id": 2,
-      "title": "Advanced React Development",
-      "institution": "TechEd Institute",
-      "duration": "3 months (2022)",
-      "description": "Advanced React concepts including state management, testing, performance optimization, and modern React patterns.",
-      "skills": ["React", "Redux", "Jest", "React Testing Library", "TypeScript"],
-      "projects": [
-        "Complex state management application",
-        "Performance-optimized dashboard",
-        "Comprehensive testing suite implementation"
-      ],
-      "certificate": "/api/placeholder/300/200"
+      "title": "Nature of Tasks",
+      "description": "During the internship, the student was deployed to the OPS1 Assembly Department, specifically in the Wirebond Area under Process Engineering section. The student was also given numerous tasks by the employees in the Wirebond process engineering section, helping the team by joining in weekly meetings, discussing the problems & proposed solutions, capturing pictures inside & outside the production line, printing necessary documents, presenting the project’s progress, and printed & laminated labels. Power BI monitoring yield tool is the primary project of the student followed by the student’s proposed project of creating an embedded website for the Power BI projects in the wirebond area. The project enables the Wirebond employees to have easier access to the reports, automated generation of charts for the purpose of their weekly presentation of yield and ppm (parts per million) monitoring, and continuous insights that explain the correlation of the devices, machines, brand model, wirebond line, package groups, interrupts per reason code, and ppm from time to time."
     },
     {
       "id": 3,
-      "title": "Cloud Architecture Practicum",
-      "institution": "Cloud Masters Academy",
-      "duration": "4 months (2023)",
-      "description": "Hands-on experience with cloud architecture, deployment strategies, and DevOps practices using AWS and containerization.",
-      "skills": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"],
-      "projects": [
-        "Microservices architecture deployment",
-        "Automated CI/CD pipeline setup",
-        "Scalable cloud infrastructure design"
-      ],
-      "certificate": "/api/placeholder/300/200"
+      "title": "Total Hours Rendered",
+      "description": "Throughout the OJT journey, the student completed a total of 324 hours in STMicroelectronics Inc., Backend Manufacturing & Technology plant in Calamba, Laguna. The student’s practicum engagement spans from April 22 to July 31, 2025, following a schedule of 8:00 AM up to 5:30 PM, 8.5 hours each day from Monday through Friday. During the first day in the STMicroelectronics Inc. Calamba, the student listened to the Company Orientation, followed by the Power BI Training and the 7 QC Tools Training. Moreover, the student went to the training room in order to complete various training presentations that are needed before being deployed to their respective departments. The student was deployed to the OPS1 Assembly Department, under Wirebond Process Engineering section. A Line tour was conducted to provide the students with the processes involved in the FOL (Front of Line) semiconductor manufacturing. The Power BI yield monitoring tool, which was discussed by the supervisor and the student, was developed and served as the student’s main project in the company. Additionally, the student proposed another project that these Power BI reports will be stored into the embedded website to create a central repository of the various Power BI reports, specifically for Wirebond process engineers. "
+    },
+    {
+      "id": 4,
+      "title": "Conclusion / Reflection",
+      "description": "The practicum experience at STMicroelectronics Inc., Calamba BEMT plant has been a valuable part of the student’s academic and professional development. Over the course of three months, the student was given the opportunity to apply classroom knowledge in a real-world industrial setting, specifically within a globally recognized semiconductor manufacturing environment. This hands-on experience enabled the student to translate theoretical concepts into practical applications, addressing real operational needs of the Wirebond Department. In addition, the student’s enhanced understanding of data science principles, combined with expertise in full-stack web development and Power BI, has uniquely positioned him to bridge the gap between data processing and data presentation. The ability to create robust Power BI reports and translate raw data into intuitive, actionable dashboards demonstrates a comprehensive skill set that spans the entire data value chain, from backend data handling to frontend visualization. This integrated capability not only supports smarter decision-making but also addresses the growing demand for data-driven solutions in modern industries."
     }
   ]
 }

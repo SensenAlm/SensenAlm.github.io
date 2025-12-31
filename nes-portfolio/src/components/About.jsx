@@ -1,16 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const About = ({ data, personal }) => {
   return (
     <div className="about-container">
       <div className="about-hero">
         <div className="hero-content">
-          <img 
-            src="https://via.placeholder.com/200x200/4a5568/ffffff?text=Profile" 
-            alt={personal.name}
-            className="hero-image"
-            loading="eager"
-          />
           <div className="hero-text">
             <h2>About Me</h2>
             <p className="summary">{data.summary}</p>
@@ -66,7 +60,7 @@ const About = ({ data, personal }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

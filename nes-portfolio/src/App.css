@@ -71,8 +71,8 @@ body {
 }
 
 .profile-image {
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   border: 4px solid rgba(255, 255, 255, 0.3);
   transition: transform 0.3s ease;
@@ -101,8 +101,8 @@ body {
 }
 
 .contact-link {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   display: flex;
@@ -610,11 +610,14 @@ body {
 }
 
 .certification-card {
-  background: white;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 400px; /* Adjust as needed for your design */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
 }
 
 .certification-card:hover {
@@ -623,11 +626,20 @@ body {
 }
 
 .cert-image {
-  height: 150px;
-  background: linear-gradient(135deg, #718096, #4a5568);
+  width: 100%;
+  height: 160px; /* Adjust as needed */
+  overflow: hidden;
+  background: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.certification-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .cert-image img {
@@ -637,7 +649,11 @@ body {
 }
 
 .cert-content {
-  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .cert-content h3 {
@@ -715,7 +731,9 @@ body {
 
 /* Practicum Section */
 .practicum-container {
-  max-width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .practicum-header {
@@ -736,206 +754,146 @@ body {
 
 .practicum-timeline {
   position: relative;
-  margin-bottom: 3rem;
-}
-
-.practicum-timeline::before {
-  content: '';
-  position: absolute;
-  left: 30px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, #4a5568, #2d3748);
+  padding-left: 60px;
 }
 
 .practicum-item {
-  position: relative;
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 2rem;
-  padding-left: 80px;
+  position: relative;
 }
 
 .timeline-marker {
   position: absolute;
   left: 0;
-  top: 20px;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #4a5568, #2d3748);
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: #374151;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 15px rgba(74, 85, 104, 0.3);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.marker-number {
-  color: white;
-  font-weight: 700;
-  font-size: 1.2rem;
+.practicum-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  width: 2px;
+  height: calc(100% - 40px);
+  background: #d1d5db;
+  z-index: 1;
 }
 
 .practicum-card {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.practicum-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 1.5rem 2rem;
+  margin-left: 60px;
+  width: 100%;
+  transition: box-shadow 0.2s;
 }
 
 .card-header {
-  padding: 2rem;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
 }
 
 .header-content h3 {
-  font-size: 1.4rem;
-  color: #1e293b;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .institution-info {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.institution {
-  color: #4a5568;
-  font-weight: 500;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: 0.2rem;
 }
 
 .duration {
-  background: #f1f5f9;
-  color: #64748b;
-  padding: 0.2rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.9rem;
+  background: #e5e7eb;
+  border-radius: 12px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.95rem;
+  margin-left: 0.5rem;
 }
 
 .expand-btn {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #e2e8f0;
-  background: white;
+  background: #f3f4f6;
+  border: none;
   border-radius: 50%;
-  cursor: pointer;
+  width: 36px;
+  height: 36px;
   font-size: 1.5rem;
-  color: #4a5568;
-  transition: all 0.3s ease;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .expand-btn:hover {
-  border-color: #4a5568;
-  background: #4a5568;
-  color: white;
+  background: #e5e7eb;
 }
 
 .card-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.3s;
 }
 
 .card-content.expanded {
   max-height: 1000px;
-  padding: 2rem;
+  margin-top: 1rem;
+  overflow: visible;
+  transition: max-height 0.5s;
 }
 
-.description {
-  margin-bottom: 2rem;
-  line-height: 1.6;
-  color: #64748b;
+.skills-learned, .projects-completed {
+  margin-top: 1rem;
 }
 
-.skills-learned h4,
-.projects-completed h4 {
-  font-size: 1.1rem;
-  color: #1e293b;
-  margin-bottom: 1rem;
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.skills-learned {
-  margin-bottom: 2rem;
-}
-
-.projects-completed {
-  margin-bottom: 2rem;
+.skill-tag {
+  background: #f3f4f6;
+  color: #374151;
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.95rem;
 }
 
 .projects-completed ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.projects-completed li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f1f5f9;
-  position: relative;
-  padding-left: 2rem;
-}
-
-.projects-completed li::before {
-  content: '🚀';
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
 }
 
 .certificate-section {
+  margin-top: 1.2rem;
   text-align: center;
 }
 
 .certificate-image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-width: 320px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.practicum-summary {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.practicum-summary h3 {
-  text-align: center;
-  font-size: 2rem;
-  color: #1e293b;
-  margin-bottom: 2rem;
-}
-
-.summary-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-}
-
-.stat {
-  text-align: center;
-}
-
-.stat-value {
-  display: block;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #4a5568;
-}
-
-.stat-label {
-  color: #64748b;
-  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 /* Footer */
@@ -1491,4 +1449,36 @@ body {
   .verify-btn {
     font-weight: 600;
   }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or a fixed min-height, e.g. min-height: 500px; */
+}
+
+.project-image {
+  width: 100%;
+  height: 180px; /* adjust as needed */
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
 }
